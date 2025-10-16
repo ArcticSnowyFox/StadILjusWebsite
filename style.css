@@ -1,10 +1,49 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    overflow-x: auto;
+    overflow-y: visible;
+
+    transition: ease-in-out 200ms;
 }
 
 body {
     background-color: black;
     width: 100vw;
-    height: auto;
+    height: fit-content;
     min-height: 100vh;
+}
+
+.gal {
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+
+    padding: 2rem;
+
+    background-color: hsl(0, 0%, 10%);
+
+    column-count: auto;
+    column-gap: 1rem;
+    column-width: 25rem;
+}
+
+
+.imageGal {
+    width: 100%;
+    height: auto;
+
+    margin: 0 0 1rem 0;
+
+    display: block;
+    border-radius: 0.5rem;
+
+    transition: 150ms ease-out;
+}
+
+.imageGal:hover {
+    border-radius: 0.3rem;
+    transform: scale(1.03);
 }
